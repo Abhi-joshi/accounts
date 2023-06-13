@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ConfigurationProperties(prefix = "accounts")
-public class AccountsServiceConfig {
+public class AccountsConfig {
     private String msg;
 
     public String getMsg() {

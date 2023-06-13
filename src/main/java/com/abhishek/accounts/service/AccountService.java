@@ -6,6 +6,6 @@ import reactor.core.publisher.Mono;
 
 
 public interface AccountService {
-    Mono<Account> findAccountDetails(long customerId);
+    Account findAccountDetails(long customerId);
     Mono<ConfigProperties> getProperties();
 }
