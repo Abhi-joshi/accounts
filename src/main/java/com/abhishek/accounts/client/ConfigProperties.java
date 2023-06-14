@@ -1,4 +1,4 @@
 package com.abhishek.accounts.client;
 
-public record ConfigProperties(String msg) {
+public record ConfigProperties(String msg, String password) {
 }

@@ -25,7 +25,7 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public Mono<ConfigProperties> getProperties() {
-       ConfigProperties configProperties = new ConfigProperties(this.accountsConfig.getMsg());
+       ConfigProperties configProperties = new ConfigProperties(this.accountsConfig.getMsg(), this.accountsConfig.getPassword());
        return Mono.just(configProperties);
     }
 }
